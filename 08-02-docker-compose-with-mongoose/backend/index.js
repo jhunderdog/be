@@ -14,6 +14,7 @@ app.use(cors())
 app.use(express.json())
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsdoc(options)));
 app.get('/boards', async (req, res) => {
+  console.log("zzz");
   // 1. 데이터를 조회하는 로직 => DB에 접속해서 데이터 꺼내오기
   // const result = [
   //   {
